@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>Dimpal Singh | Frontend Developer</title>
-  <meta name="description" content="Frontend Developer Portfolio - HTML, CSS, JavaScript, React projects by Dimpal Singh" />
 
-  <!-- AOS (Animation Library) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- SEO -->
+  <meta name="description" content="Frontend Developer Portfolio of Dimpal Singh - HTML, CSS, JavaScript, React" />
+  <meta name="keywords" content="Frontend Developer, HTML CSS JS, React Portfolio, Dimpal Singh" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dimpal Singh Portfolio" />
+  <meta property="og:description" content="Frontend Developer Portfolio" />
 
   <link rel="stylesheet" href="style.css" />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 </head>
 
 <body>
@@ -18,105 +26,100 @@
   <!-- NAV -->
   <header class="nav">
     <div class="logo">Dimpal.dev</div>
-
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-
-      <button onclick="toggleTheme()" class="theme-btn">🌓</button>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div data-aos="fade-up">
+    <div>
       <h1>Hi, I'm Dimpal 👋</h1>
       <h2><span class="typing"></span></h2>
 
-      <p>Frontend Developer focused on clean UI & interactive web apps</p>
+      <p>I build modern, scalable & user-friendly web applications.</p>
 
       <div class="hero-btns">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="https://github.com/" target="_blank" class="btn outline">GitHub</a>
+        <a href="#projects" class="btn primary">View Work</a>
+        <a href="resume.pdf" download class="btn outline">Download Resume</a>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section" data-aos="fade-up">
+  <section id="about" class="section">
     <h2>About Me</h2>
+
     <p>
-      I build responsive, modern and scalable web interfaces.
-      I enjoy turning ideas into real products using HTML, CSS & JavaScript.
+      I am a Frontend Developer passionate about building high-performance web apps.
+      I focus on UI/UX, responsiveness, and clean code architecture.
     </p>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section dark" data-aos="fade-up">
-    <h2>Skills</h2>
+  <section id="skills" class="section dark">
+    <h2>Technical Skills</h2>
 
     <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
+      <span>HTML5</span>
+      <span>CSS3</span>
       <span>JavaScript</span>
       <span>React</span>
-      <span>GitHub</span>
-      <span>Responsive UI</span>
+      <span>Git & GitHub</span>
+      <span>REST API</span>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section" data-aos="fade-up">
-    <h2>Projects</h2>
+  <section id="projects" class="section">
+    <h2>Case Study Projects</h2>
 
     <div class="grid">
 
       <div class="card">
         <h3>Portfolio Website</h3>
-        <p>Modern developer portfolio with animations</p>
-        <a href="#" target="_blank">Live</a> | 
-        <a href="#" target="_blank">GitHub</a>
+        <p>Fully responsive developer portfolio with animations</p>
+        <a href="#">Live</a> | <a href="#">Code</a>
       </div>
 
       <div class="card">
-        <h3>Todo App</h3>
-        <p>Task manager using local storage</p>
-        <a href="#" target="_blank">Live</a>
+        <h3>Expense Tracker</h3>
+        <p>Finance tracking app with charts & local storage</p>
+        <a href="#">Live</a>
       </div>
 
       <div class="card">
-        <h3>Weather App</h3>
-        <p>API based live weather tracker</p>
-        <a href="#" target="_blank">Live</a>
+        <h3>Weather Dashboard</h3>
+        <p>Real-time weather app using API integration</p>
+        <a href="#">Live</a>
       </div>
 
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section dark" data-aos="fade-up">
-    <h2>Let's Connect</h2>
+  <section id="contact" class="section dark">
+    <h2>Contact Me</h2>
 
-    <p>Email: yourmail@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Message" required></textarea>
 
-    <a class="btn primary" href="mailto:yourmail@gmail.com">Hire Me</a>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+
+    <p id="status"></p>
   </section>
 
   <footer>
-    <p>© 2026 Dimpal Singh</p>
+    <p>© 2026 Dimpal Singh | Built for Opportunities</p>
   </footer>
 
-  <!-- SCRIPTS -->
   <script src="script.js"></script>
-
-  <!-- AOS INIT -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
 </body>
 </html>
