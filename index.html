@@ -1,125 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOD TIER FINAL Portfolio</title>
 
-  <title>Dimpal Singh | Frontend Developer</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Frontend Developer Portfolio of Dimpal Singh - HTML, CSS, JavaScript, React" />
-  <meta name="keywords" content="Frontend Developer, HTML CSS JS, React Portfolio, Dimpal Singh" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Dimpal Singh Portfolio" />
-  <meta property="og:description" content="Frontend Developer Portfolio" />
-
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAV -->
-  <header class="nav">
-    <div class="logo">Dimpal.dev</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<div class="bg"></div>
+<div class="cursor"></div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div>
-      <h1>Hi, I'm Dimpal 👋</h1>
-      <h2><span class="typing"></span></h2>
+<nav>
+  <h2>GOD TIER</h2>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-      <p>I build modern, scalable & user-friendly web applications.</p>
+<section class="hero" id="home">
+  <div>
+    <h1>God Tier UI</h1>
+    <p>Ultimate Apple + Vision Pro Inspired Experience</p>
+    <button class="btn">Enter Reality</button>
+  </div>
+</section>
 
-      <div class="hero-btns">
-        <a href="#projects" class="btn primary">View Work</a>
-        <a href="resume.pdf" download class="btn outline">Download Resume</a>
-      </div>
+<section id="about">
+  <div>
+    <h2>About</h2>
+    <p>This is a cinematic, immersive, 3D glass UI portfolio built with pure HTML & CSS.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div>
+    <h2>Work</h2>
+    <div class="cards">
+      <div class="card">Neural UI System</div>
+      <div class="card">3D Web Experience</div>
+      <div class="card">Immersive Portfolio</div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
+<section id="contact">
+  <div>
+    <h2>Contact</h2>
+    <input placeholder="Name">
+    <input placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button class="btn">Send</button>
+  </div>
+</section>
 
-    <p>
-      I am a Frontend Developer passionate about building high-performance web apps.
-      I focus on UI/UX, responsiveness, and clean code architecture.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section dark">
-    <h2>Technical Skills</h2>
-
-    <div class="skills">
-      <span>HTML5</span>
-      <span>CSS3</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Git & GitHub</span>
-      <span>REST API</span>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2>Case Study Projects</h2>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>Fully responsive developer portfolio with animations</p>
-        <a href="#">Live</a> | <a href="#">Code</a>
-      </div>
-
-      <div class="card">
-        <h3>Expense Tracker</h3>
-        <p>Finance tracking app with charts & local storage</p>
-        <a href="#">Live</a>
-      </div>
-
-      <div class="card">
-        <h3>Weather Dashboard</h3>
-        <p>Real-time weather app using API integration</p>
-        <a href="#">Live</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section dark">
-    <h2>Contact Me</h2>
-
-    <form id="contact-form">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <textarea id="message" placeholder="Message" required></textarea>
-
-      <button type="submit" class="btn primary">Send Message</button>
-    </form>
-
-    <p id="status"></p>
-  </section>
-
-  <footer>
-    <p>© 2026 Dimpal Singh | Built for Opportunities</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script>
+document.addEventListener('mousemove',(e)=>{
+  const c=document.querySelector('.cursor');
+  c.style.left=e.clientX+'px';
+  c.style.top=e.clientY+'px';
+});
+</script>
 
 </body>
 </html>
